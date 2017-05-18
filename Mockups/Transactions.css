@@ -1,0 +1,136 @@
+body, html{
+    font-family: Verdana;
+    font-size: .85em;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+h1{
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4em;
+}
+
+.row{
+    position: relative;
+}
+.col{
+    float: left;
+}
+.row:after{
+    content:"";
+    clear:both;
+    display:table;
+    line-height:0
+}
+
+
+.box{
+    padding: 20px;
+}
+
+.table {
+    
+}
+.tbl-cell-row{
+    border-left: solid 1px #ddd;
+    cursor: hand;
+}
+.tbl-cell-row:hover{
+    background: #EBF8F0;
+}
+.tbl-cell-hdr{
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    border-top: solid 1px #ddd;
+    background: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.tbl-row-hdr{
+    font-weight: bold;
+}
+
+.tbl-cell{
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    padding: 10px;
+}
+
+.col-5-all{
+    width: 5%;
+}
+.clear{
+    clear: all;
+}
+
+.summary-label{
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.summary-value{
+    font-size: 1.7em;
+}
+
+.col-5-all { width: 5%; }
+.col-10-all { width: 10%; }
+.col-15-all { width: 15%; }
+.col-20-all { width: 20%; }
+.col-25-all { width: 25%; }
+.col-30-all { width: 30%; }
+.col-35-all { width: 35%; }
+.col-40-all { width: 40%; }
+.col-45-all { width: 45%; }
+.col-50-all { width: 50%; }
+.col-55-all { width: 55%; }
+.col-60-all { width: 60%; }
+.col-65-all { width: 65%; }
+.col-70-all { width: 70%; }
+.col-75-all { width: 75%; }
+.col-80-all { width: 80%; }
+.col-85-all { width: 85%; }
+.col-90-all { width: 90%; }
+.col-95-all { width: 95%; }
+.col-100-all { width: 100%; }
+
+
+@media (min-width:768px){
+    .dsp-none-a { display: none; }
+}
+
+
+@media (max-width:767px){
+
+    .col-5-b { width: 5%; }
+    .col-10-b { width: 10%; }
+    .col-15-b { width: 15%; }
+    .col-20-b { width: 20%; }
+    .col-25-b { width: 25%; }
+    .col-30-b { width: 30%; }
+    .col-35-b { width: 35%; }
+    .col-40-b { width: 40%; }
+    .col-45-b { width: 45%; }
+    .col-50-b { width: 50%; }
+    .col-55-b { width: 55%; }
+    .col-60-b { width: 60%; }
+    .col-65-b { width: 65%; }
+    .col-70-b { width: 70%; }
+    .col-75-b { width: 75%; }
+    .col-80-b { width: 80%; }
+    .col-85-b { width: 85%; }
+    .col-90-b { width: 90%; }
+    .col-95-b { width: 95%; }
+    .col-100-b { width: 100%; }
+
+    .dsp-none-b { display: none; }
+
+    .b-b-b {
+        border: solid 1px #ddd;
+        box-shadow: 3px 3px #ddd;
+    }
+
+    .m-t-b {margin-top: 10px;}
+}
