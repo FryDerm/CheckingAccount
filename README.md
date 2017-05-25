@@ -7,6 +7,8 @@ A repository for me to play around with Angular 4 and Microservice concepts.
 
 ## Ahead of Time Compiling (AOT)
 
+https://angular.io/docs/ts/latest/cookbook/aot-compiler.html#
+
 Run the following commands:
 
 `node_modules/.bin/ngc -p tsconfig-aot.json`
