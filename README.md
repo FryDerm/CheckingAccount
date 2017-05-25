@@ -5,7 +5,7 @@ A repository for me to play around with Angular 4 and Microservice concepts.
 
 `npm start`
 
-## AOT Compiling
+## Ahead of Time Compiling (AOT)
 
 Run the following commands:
 
