@@ -18,3 +18,9 @@ Run the following commands:
 Add this to the src/index.html file after the `</body>` tag.
 
 `script src="build.js"></script>`
+
+## Webpack 
+Webpack is an alternative bundling technology that will also allow me to use technologies such as LESS, SASS, etc...
+
+https://angular.io/docs/ts/latest/guide/webpack.html
+
