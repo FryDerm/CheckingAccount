@@ -7,8 +7,8 @@ Run the following commands:
 
 `node_modules/.bin/ngc -p tsconfig-aot.json`
 
-`ode_modules/.bin/rollup -c rollup-config.js`
+`node_modules/.bin/rollup -c rollup-config.js`
 
-Add this after </body> tag.
+Add this after the `</body>` tag.
 
 `script src="build.js"></script>`
