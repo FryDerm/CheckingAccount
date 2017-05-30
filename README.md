@@ -20,7 +20,3 @@ Add this to the src/index.html file after the `</body>` tag.
 Add this to the `<head>` section.
 
 `<link rel="stylesheet" type="text/css" href="./app/app.component.min.css">`
-
-THen browse to this url.
-
-http://localhost:3000/transactions
