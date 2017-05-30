@@ -12,15 +12,14 @@
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <!-- AOT version -->
-    <link rel="stylesheet" type="text/css" href="./app/app.component.min.css">
-
+    <!-- Non AOT version -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main-jit.js').catch(function(err){ console.error(err); });
+    </script>
   </head>
 
   <body>
     <my-app>Loading AppComponent content here ...</my-app>
   </body>
-
-  <!-- AOT version -->
-  <script src="build.js"></script>
 </html>
