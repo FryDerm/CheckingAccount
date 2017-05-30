@@ -5,7 +5,7 @@
  */
 /* tslint:disable */
 "use strict";
-var import0 = require("./app.component.scss.ngstyle");
+var import0 = require("./app.component.min.css.ngstyle");
 var import1 = require("@angular/core");
 var import2 = require("@angular/router");
 var import3 = require("@angular/common");

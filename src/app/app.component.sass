@@ -1,0 +1,218 @@
+body, html 
+  font-family: Verdana, Arial;
+  font-size: .85em;
+  margin: 0px;
+  padding: 0px;
+
+
+select 
+    padding: 3px;
+    border: solid 1px #ccc;
+    font-family: inherit;
+
+
+input 
+    padding: 2px;
+    border: solid 1px #ccc;
+    font-family: inherit;
+
+
+h1 
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4em;
+
+
+hr 
+    border: solid .5px #ccc;
+    padding: 0;
+    margin: 0;
+
+
+input[type=button] 
+    padding: 5px 10px;
+    border-radius: 3px;
+
+
+.header 
+    background: #24292E;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    padding: 0 20px;
+
+
+.site-name 
+    font-size: 1.5em;
+
+
+.header 
+    svg 
+        height: 30px;
+        color: white;
+        margin: 5px 0;
+        fill: white;
+    a 
+        color: white;
+        text-decoration: none;
+  
+
+
+.primary-button 
+    background: steelblue;
+    color: white;
+
+.form-label 
+    line-height: 25px;
+
+
+.row 
+    position: relative;
+
+
+.col
+    float: left;
+
+.col-r 
+    float: right;
+
+.row:after 
+    content: "";
+    clear: both;
+    display: table;
+    line-height: 0;
+
+
+.box
+     padding: 20px;
+
+
+.table
+
+.tbl-cell-row
+    border-left: solid 1px #ddd;
+    cursor: hand;
+    &:hover
+        background: #EBF8F0;
+
+
+.tbl-cell-hdr 
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    border-top: solid 1px #ddd;
+    background: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+
+
+.tbl-row-hdr 
+    font-weight: bold;
+
+
+.tbl-cell
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    padding: 10px;
+
+
+.col-5-all
+    width: 5%;
+
+.clear
+    clear: all;
+
+
+.summary-label
+    font-size: 1em;
+    text-transform: uppercase;
+
+.summary-value
+    font-size: 1.7em;
+
+.label
+    font-size: 1em;
+
+//  Columns
+@for $i from 1 through 20 
+    $width: $i * 5
+    .col-#{$width}-all
+        width: percentage($width / 100);
+    
+//  Margins
+$locations: "top" "bottom" "left" "right"
+@each $loc in $locations
+    .m-#{str-slice($loc, 1, 1)}-all
+        margin-#{$loc}: 10px;
+    .p-#{str-slice($loc, 1, 1)}-all
+        padding-#{$loc}: 10px;
+.m-a-all
+    margin: 10px;
+.p-a-all
+    padding: 10px
+        
+.ta-r-all 
+    text-align: right;
+
+.ta-l-all 
+    text-align: left;
+
+@media (min-width: 768px) 
+    .dsp-none-a 
+        display: none;
+  
+    @for $i from 1 through 20 
+        $width: $i * 5
+        .col-#{$width}-a
+            width: percentage($width / 100);
+  
+    //  Margins
+    $locations: "top" "bottom" "left" "right"
+    @each $loc in $locations
+        .m-#{str-slice($loc, 1, 1)}-a
+            margin-#{$loc}: 10px;
+        .p-#{str-slice($loc, 1, 1)}-a
+            padding-#{$loc}: 10px;
+    .m-a-a
+        margin: 10px;
+    .p-a-a
+        padding: 10px
+  
+    .ta-r-a 
+        text-align: right;
+  
+    .ta-l-a 
+        text-align: left;
+  
+
+
+@media (max-width: 767px) 
+    @for $i from 1 through 20 
+        $width: $i * 5
+        .col-#{$width}-b
+            width: percentage($width / 100);
+  
+    .dsp-none-b 
+        display: none;
+  
+    .b-b-b 
+        border: solid 1px #ddd;
+        box-shadow: 3px 3px #ddd;
+  
+    //  Margins
+    $locations: "top" "bottom" "left" "right"
+    @each $loc in $locations
+        .m-#{str-slice($loc, 1, 1)}-b
+            margin-#{$loc}: 10px;
+        .p-#{str-slice($loc, 1, 1)}-b
+            padding-#{$loc}: 10px;
+    .m-a-b
+        margin: 10px;
+    .p-a-b
+        padding: 10px
+  
+    .ta-r-b 
+        text-align: right;
+  
+    .ta-l-b 
+        text-align: left;
+  

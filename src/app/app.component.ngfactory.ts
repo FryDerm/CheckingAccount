@@ -6,7 +6,7 @@
  /* tslint:disable */
 
 
-import * as import0 from './app.component.scss.ngstyle';
+import * as import0 from './app.component.min.css.ngstyle';
 import * as import1 from '@angular/core';
 import * as import2 from '@angular/router';
 import * as import3 from '@angular/common';
